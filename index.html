@@ -1,5 +1,231 @@
 <!DOCTYPE html>
 <html>
 <body>
-  </body>
+
+  <div class="main">
+    <div class="left">
+      <div class="box">
+        <h3 class="tickbox">Delivery</h3>
+        <h4> Mobile Entry - Free</h4>
+        <p> Tickets Available by Sun Apr 3, 2022</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et mattis eros. Curabitur at sem vestibulum, luctus sem vitae, convallis augue.</p>
+      </div>
+      <div class="box">
+        <h3 class="tickbox">Payment</h3>
+        <h4>Use Credit / Debit Card</h4>
+        <div class="payment-choice visa js-active">
+          <input type="radio" checked="checked" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" />
+          <div class="inner">
+
+            <div class="visa-elements">
+              <h5>Visa - 9999</h5>
+              <p>User Name | exp. 00/11</p>
+              <p><a href="#">Edit</a> | <a href="#">Delete</a></p>
+            </div>
+            <div class="security-code">
+              <p>Security Code</p>
+              <input type="text" value="***">
+            </div>
+          </div>
+        </div>
+        <div class="new-card">
+          <button>+</button>
+          <img src="" />
+          <h5>Add New Card</h5>
+        </div>
+        <h5>Or Pay With</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et mattis eros. Curabitur at sem vestibulum, luctus sem vitae, convallis <a href="#">augue</a></p>
+      </div>
+    </div>
+    <!-- left -->
+    <div class="right">
+      <div class="total">
+        <h3>Total</h3>
+        <h3 class="amount">$0.00</h3>
+      </div>
+      <div class="tickets">
+        <h4>Tickets</h4>
+        <div class="inner">
+          <p>Lorem ipsum: $220.00 x 2</p>
+          <p>$00.00</p>
+        </div>
+      </div>
+      <div class="seller-notes">
+        <h4>Notes from Seller</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et mattis eros. Curabitur at sem vestibulum, luctus sem vitae, convallis.</p>
+      </div>
+      <div class="fees">
+        <h4>Fees</h4>
+        <div class="service-fee">
+          <p>Service Fee:</p>
+          <p>$00.00</p>
+        </div>
+        <div class="order-processing">
+          <p>Order Processing Fee</p>
+          <p>$00.00</p>
+        </div>
+      </div>
+      <div class="delivery">
+        <h4>Fees</h4>
+        <div>
+          <p>Mobile Entry</p>
+          <p>Free</p>
+        </div>
+      </div>
+      <a href="#" class="cancel"><p>Cancel Order</p></a>
+      <p>*All Sales Final - No Refunds</p>
+      <div class="terms">
+        <input type="radio">
+        <p> I have read and agree to the current <a href="#">Terms of Use</a></p>
+      </div>
+      <input type="submit" class="submit" value="Place Order">
+      <p><small>*Exceptions may apply, see our <a href="#">Terms of Use</a></small></p>
+    </div>
+  </div>
+
+
+</body>
+<style>
+  div.main {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  div.main .left, div.main .right {
+      /* width: 50%; */
+  }
+  div.main .left .box {
+      border: 1px solid #978989;
+      padding: 10px;
+      margin: 0 0px 15px 0;
+      border-radius: 5px;
+  }
+  * {
+      font-family: arial;
+  }
+  div.main .left .box:nth-child(1) p:nth-child(3) {
+      margin: 0px;
+  }
+  div.main .left .box:nth-child(1) p:nth-child(4) {
+      margin-top: 0;
+  }
+  h3.tickbox:after {
+      content: "✓";
+      margin-left: 10px;
+      border: 2px solid green;
+      color: green;
+      padding: 1px 4px;
+      border-radius: 60px;
+  }
+  .payment-choice.visa {
+      display: flex;
+      background: #f2f7fc;
+      padding: 20px 10px;
+  }
+
+  .payment-choice img {
+      max-width: 50px;
+  }
+  .visa-elements * {
+      margin: 0 0px 6px 0px;
+  }
+
+  .payment-choice.visa input, .payment-choice.visa img {
+      align-self: flex-start;
+  }
+  .payment-choice.visa>* {
+      margin-right: 15px;
+  }
+  .security-code p {
+      margin-bottom: 3px;
+  }
+  .new-card h5 {
+      margin: 9px 0 0 15px;
+      cursor: pointer;
+  }
+  .new-card button {
+      padding: 0px 1px;
+      margin-left: 2px;
+      background: none;
+      border: none;
+      margin-right: -1px;
+      color: #004eff;
+      font-size: 30px;
+      cursor: pointer;
+  }
+  .new-card {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #cbd3db;
+  }
+  .new-card h5, a {
+      color: blue;
+      text-decoration: none;
+  }
+  .new-card+h5, .new-card+h5+p {
+      padding: 0px 10px;
+  }
+  .right {
+    border: 1px solid #978989;
+      padding: 10px;
+      border-radius: 5px;
+      width: calc(50% - 30px) !important;
+      margin-left: 8px;
+  }
+  .left {
+      margin-right: 8px;
+      width: calc(50% - 8px);
+  }
+  .total {
+      display: flex;
+      justify-content: space-between;
+  }
+  .total h3+h3:after {
+      content: '˄';
+      margin-left: 9px;
+      color: grey;
+      font-size: 23px;
+      font-weight: 100;
+      font-family: monospace;
+      position: relative;
+      top: 7px;
+      cursor: pointer;
+  }
+  .tickets .inner {
+      display: flex;
+      justify-content: space-between;
+  }
+  .seller-notes h4,
+  .tickets h4 {
+      margin-bottom: 0px;
+  }
+  .fees > div {
+      display: flex;
+      justify-content: space-between;
+  }
+  .fees * {
+      margin-bottom: 0;
+  }
+  .fees .order-processing * {
+      margin-top: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* . */
+
+</style>
 </html>
