@@ -2,6 +2,18 @@
 <html>
 <body>
 
+  <div class="choose-ticket">
+    <h1>Choose a ticket</h1>
+    <select name="ticketselect" id="ticketselect">
+      <option value="superman">Superman 100$</option>
+      <option value="batman">Batman 150$</option>
+      <option value="fishman">Fishman 50$</option>
+      <option value="Sauceman">Sauceman 25$</option>
+    </select>
+    <input type="number" id="quantity" name="quantity" min="1" max="99">
+    <button class="order">Add To Order</button>
+  </div>
+
   <div class="main">
     <div class="left">
       <div class="box">
@@ -210,11 +222,42 @@
   .fees .order-processing * {
       margin-top: 5px;
   }
-
-
-
-
-
+  .delivery>div {
+      display: flex;
+      justify-content: space-between;
+  }
+  .delivery h4 {
+    margin-bottom: 0;
+  }
+  a.cancel {
+    font-weight: bold;
+  }
+  a.cancel p {
+    margin-bottom: 50px;
+  }
+  .terms {
+    display: flex;
+}
+.terms input {
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+a.cancel+p {
+    font-weight: bold;
+}
+.terms p {
+    font-weight: bold;
+}
+input.submit {
+    width: 100%;
+    background: #3b7e2a;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
 
 
 
