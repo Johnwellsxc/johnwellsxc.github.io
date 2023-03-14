@@ -20,12 +20,11 @@
         <div class="payment-choice visa js-active">
           <input type="radio">
           <div class="inner">
-
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" />
             <div class="visa-elements">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" />
               <h5>Visa - 9999</h5>
               <p>User Name | exp. 00/11</p>
-              <p><a href="#">Edit</a> | <a href="#"Delete</a></p>
+              <p><a href="#">Edit</a> | <a href="#">Delete</a></p>
             </div>
             <div class="security-code">
               <p>Security Code</p>
@@ -124,7 +123,12 @@
   .payment-choice.visa input {
       align-content: normal;
   }
-
+  .payment-choice img {
+      max-width: 50px;
+  }
+  .visa-elements * {
+      margin: 0 0px 6px 0px;
+  }
 
 
 
