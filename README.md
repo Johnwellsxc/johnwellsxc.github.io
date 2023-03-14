@@ -14,4 +14,5 @@ Features:
 
 
 ! Links and buttons besides above mentioned functions ie. Cancel Order, Add New Card, and Add to Order are visual only
+
 ! Desktop-only
