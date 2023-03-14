@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/Johnwellsxc/johnwellsxc.github.io/main/style.css">
-  <script src="script.js"></script>
-</head>
 <body>
 
   <div class="main">
@@ -18,7 +14,7 @@
         <h3 class="tickbox">Payment</h3>
         <h4>Use Credit / Debit Card</h4>
         <div class="payment-choice visa js-active">
-          <input type="radio">
+          <input type="radio" checked="checked" />
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" />
           <div class="inner">
 
@@ -29,7 +25,7 @@
             </div>
             <div class="security-code">
               <p>Security Code</p>
-              <input type="text">
+              <input type="text" value="***">
             </div>
           </div>
         </div>
@@ -93,12 +89,12 @@
       flex-wrap: wrap;
   }
   div.main .left, div.main .right {
-      width: 50%;
+      /* width: 50%; */
   }
   div.main .left .box {
       border: 1px solid #978989;
       padding: 10px;
-      margin: 15px;
+      margin: 0 0px 15px 0;
       border-radius: 5px;
   }
   * {
@@ -120,15 +116,96 @@
   }
   .payment-choice.visa {
       display: flex;
+      background: #f2f7fc;
+      padding: 20px 10px;
   }
-  .payment-choice.visa input {
-      align-content: normal;
-  }
+
   .payment-choice img {
       max-width: 50px;
   }
   .visa-elements * {
       margin: 0 0px 6px 0px;
+  }
+
+  .payment-choice.visa input, .payment-choice.visa img {
+      align-self: flex-start;
+  }
+  .payment-choice.visa>* {
+      margin-right: 15px;
+  }
+  .security-code p {
+      margin-bottom: 3px;
+  }
+  .new-card h5 {
+      margin: 9px 0 0 15px;
+      cursor: pointer;
+  }
+  .new-card button {
+      padding: 0px 1px;
+      margin-left: 2px;
+      background: none;
+      border: none;
+      margin-right: -1px;
+      color: #004eff;
+      font-size: 30px;
+      cursor: pointer;
+  }
+  .new-card {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #cbd3db;
+  }
+  .new-card h5, a {
+      color: blue;
+      text-decoration: none;
+  }
+  .new-card+h5, .new-card+h5+p {
+      padding: 0px 10px;
+  }
+  .right {
+    border: 1px solid #978989;
+      padding: 10px;
+      border-radius: 5px;
+      width: calc(50% - 30px) !important;
+      margin-left: 8px;
+  }
+  .left {
+      margin-right: 8px;
+      width: calc(50% - 8px);
+  }
+  .total {
+      display: flex;
+      justify-content: space-between;
+  }
+  .total h3+h3:after {
+      content: '˄';
+      margin-left: 9px;
+      color: grey;
+      font-size: 23px;
+      font-weight: 100;
+      font-family: monospace;
+      position: relative;
+      top: 7px;
+      cursor: pointer;
+  }
+  .tickets .inner {
+      display: flex;
+      justify-content: space-between;
+  }
+  .seller-notes h4,
+  .tickets h4 {
+      margin-bottom: 0px;
+  }
+  .fees > div {
+      display: flex;
+      justify-content: space-between;
+  }
+  .fees * {
+      margin-bottom: 0;
+  }
+  .fees .order-processing * {
+      margin-top: 5px;
   }
 
 
